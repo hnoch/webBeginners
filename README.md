@@ -45,4 +45,5 @@ Link: [Google][googlelink]
 
 
 * 참고문서
-Link : [How To use MarkDown?][https://gist.github.com/ihoneymon/652be052a0727ad59601]
+Link : [How To use MarkDown?][linkTest]
+[linkTest]: https://gist.github.com/ihoneymon/652be052a0727ad59601
