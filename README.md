@@ -42,3 +42,7 @@ Link: [Google][googlelink]
 ![ImageTest]()
 
 <img src="/terrarium/images/plant1.png" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="plant"></img>
+
+
+* 참고문서
+Link : [How To use MarkDown?][https://gist.github.com/ihoneymon/652be052a0727ad59601]
