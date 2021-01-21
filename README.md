@@ -1,6 +1,9 @@
 # webBeginners
 web development for Beginners
+* 참고문서
+Link : [50Project][LearingURL]
 
+[LearingURL]: https://www.udemy.com/course/50-projects-50-days/
 
 ## 1. 제목 H2
 
