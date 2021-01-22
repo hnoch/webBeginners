@@ -2,8 +2,10 @@
 web development for Beginners
 * 참고문서
 Link : [50Project][LearingURL]
+Link : [Ref Github][gitURL]
 
 [LearingURL]: https://www.udemy.com/course/50-projects-50-days/
+[gitURL]: https://github.com/bradtraversy/50projects50days/blob/master/expanding-cards/index.html
 
 ## 1. 제목 H2
 
