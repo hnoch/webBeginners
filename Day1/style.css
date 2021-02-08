@@ -62,7 +62,7 @@ body {
 }
 
 /* 미디어 쿼리  - 최대 너비 480px 일 때 스타일 적용 */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .container {
         width: 100vw;
     }

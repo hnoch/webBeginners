@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+:root {
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f7fb;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  /* 위에서 아래로 */
+  flex-direction: column;
+  /* 세로 기준 중심 */
+  align-items: center;
+  /* 가로 기준 중심 */
+  justify-content: center;
+  height: 100vh;
+  /* 내용이 크면 보이지 않도록 */
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  /* 영역을 차지하며 사이 여백 */
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+/* 실제 내용 바로 앞에 생성되는 자식요소 */
+.progress-container::before {
+  content: '';
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /* y축 -50%만큼 회전 */
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  /* 사용자로부터 값이 낮을수록 멀고 값이 클수록 가까움*/
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /* y축 -50%만큼 회전 */
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  /* 애니메이션 0.4초 이내 // 기본값 */
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--line-border-empty);
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: var(--line-border-fill);
+}
+
+.btn {
+  background-color: var(--line-border-fill);
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  /* 커서 선택 (갖대 댈 경우 마우스 커서 ) */
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  /* 바깥 외곽선 (border속성보다 바깥) */
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  /* 커서 선택불가 */
+  cursor: not-allowed;
+}
